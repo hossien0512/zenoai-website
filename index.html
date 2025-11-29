@@ -2,428 +2,334 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZenoAI – AI-powered web apps built like it’s 2035</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="ZenoAI helps you design and build modern dashboards, SaaS apps, and automations – fast, clean, and future-proof."
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
   />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <div class="page">
 
     <!-- NAVBAR -->
-    <header class="nav">
-      <div class="nav-inner">
-        <div class="nav-left">
-          <div class="nav-logo">Z</div>
-          <div class="nav-title">
-            <span class="nav-title-main">ZenoAI</span>
-            <span class="nav-title-sub">AI developer & web engineer</span>
+    <header class="navbar">
+      <div class="nav-left">
+        <div class="brand-pill">
+          <span class="brand-logo">Z</span>
+          <div class="brand-text">
+            <span class="brand-name">ZenoAI</span>
+            <span class="brand-tagline">Next-gen dev studio</span>
           </div>
         </div>
+      </div>
 
-        <div class="nav-links">
-          <a href="#services" class="nav-link">Services</a>
-          <a href="#process" class="nav-link">How it works</a>
-          <a href="#tech" class="nav-link">Tech</a>
-          <span class="nav-pill">Reply in &lt; 24h</span>
-        </div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#tech">Tech</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a
+          href="https://zenoai-form.vercel.app/"
+          class="btn btn-primary nav-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Start a project
+        </a>
       </div>
     </header>
 
     <!-- HERO -->
     <main>
-      <section class="hero">
-        <div class="hero-left">
-          <div class="hero-pill">
-            <span class="hero-pill-dot"></span>
-            Accepting a few serious clients
-          </div>
+      <section class="hero" id="top">
+        <div class="hero-content">
+          <div class="hero-label">Taking a few serious projects only</div>
 
-          <h1 class="hero-title">
-            AI-powered web apps
-            <span>built like it’s 2035.</span>
+          <h1>
+            AI-powered websites & apps<br />
+            built like it's <span class="accent">2035</span>.
           </h1>
 
           <p class="hero-subtitle">
-            I use ZenoAI to design, build, and ship modern dashboards, SaaS apps,
-            and automations – so your product feels fast, clean, and future-proof.
+            I use ZenoAI to design, plan, and build modern apps, dashboards, and tools — clean UI, fast backend, smart features.
           </p>
-
-          <div class="hero-stats">
-            <div class="hero-stat-card">
-              <div class="hero-stat-label">Focus</div>
-              <div class="hero-stat-value">Web apps & AI</div>
-              <div class="hero-stat-note">Dashboards, SaaS, automations</div>
-            </div>
-            <div class="hero-stat-card">
-              <div class="hero-stat-label">Approach</div>
-              <div class="hero-stat-value">Plan → Build → Ship</div>
-              <div class="hero-stat-note">Clear milestones & testing</div>
-            </div>
-            <div class="hero-stat-card">
-              <div class="hero-stat-label">Response</div>
-              <div class="hero-stat-value">&lt; 24 hours</div>
-              <div class="hero-stat-note">Direct, honest feedback</div>
-            </div>
-          </div>
 
           <div class="hero-actions">
             <a
-              href="#contact"
+              href="https://zenoai-form.vercel.app/"
               class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              🚀 Start a project with ZenoAI
+              🚀 Send a project
             </a>
             <a href="#services" class="btn btn-ghost">
-              View what I can build
+              Explore what I build
             </a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-pill">
+              <span class="meta-label">Reply time</span>
+              <span class="meta-value">&lt; 24 hours</span>
+            </div>
+
+            <div class="meta-pill">
+              <span class="meta-label">Focus</span>
+              <span class="meta-value">Quality first</span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-right">
-          <div class="hero-panel">
-            <div class="hero-panel-header">
-              <div class="hero-panel-title">What ZenoAI helps me do</div>
-              <div class="hero-panel-pill">Smart assistant · Not a toy</div>
-            </div>
+        <div class="hero-panel">
+          <div class="hero-panel-inner">
+            <h2>What ZenoAI helps me do</h2>
 
-            <div class="hero-panel-grid">
-              <div class="card">
-                <div class="card-title">Before coding</div>
-                <div class="card-text">
-                  ZenoAI helps analyse your idea, clarify scope, and break it into
-                  realistic milestones with time and cost estimates.
-                </div>
-                <div class="tag-row">
-                  <span class="tag">Scope analysis</span>
-                  <span class="tag">Milestones</span>
-                  <span class="tag">Estimates</span>
-                </div>
-              </div>
+            <ul class="hero-list">
+              <li>Break project into milestones</li>
+              <li>Generate clean boilerplate code</li>
+              <li>Automated test & review</li>
+              <li>Deploy sharp & fast</li>
+            </ul>
 
-              <div class="card">
-                <div class="card-title">While building</div>
-                <div class="card-text">
-                  I use ZenoAI to speed up boilerplate code, refactors, and testing –
-                  but I stay in control of architecture and quality.
-                </div>
-                <div class="tag-row">
-                  <span class="tag">Clean code</span>
-                  <span class="tag">Faster builds</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="contact-card">
-              <div class="card-title">Who you work with</div>
-              <div class="card-text">
-                You’re working directly with <strong>Hossien Harby</strong> – using
-                ZenoAI as a serious tool, not a shortcut. The goal is quality
-                builds, not quick hacks.
-              </div>
+            <div class="hero-panel-footer">
+              <span class="dot"></span>
+              <span class="hero-mini">You handle vision — I handle the entire build.</span>
             </div>
           </div>
         </div>
       </section>
 
       <!-- SERVICES -->
-      <section id="services" class="section">
+      <section class="section" id="services">
         <div class="section-header">
-          <h2 class="section-title">What I build with ZenoAI</h2>
-          <p class="section-subtitle">
-            Best for projects that need clean UI, solid backend, and smart automation –
-            not just “ideas”.
-          </p>
+          <h2>What I build with ZenoAI</h2>
+          <p>Clean, fast and future-proof builds focused on real business value.</p>
         </div>
 
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-title">AI & automation</div>
-            <div class="card-text">
-              Chatbots, assistants, and automations that actually help your users, not just
-              pretend to be “AI”.
-            </div>
+        <div class="cards-grid three">
+          <article class="card">
+            <h3>AI & Automation</h3>
             <ul class="card-list">
-              <li>Support chatbots & helpers</li>
-              <li>Task automation & workflows</li>
-              <li>API integrations (OpenAI, Stripe, etc.)</li>
-              <li>Auto-reporting & dashboards</li>
+              <li>Smart chatbots</li>
+              <li>Process automation</li>
+              <li>API integrations</li>
+              <li>Daily/weekly auto-reports</li>
             </ul>
-            <div class="tag-row">
-              <span class="tag">AI</span>
-              <span class="tag">Automation</span>
-            </div>
-          </div>
+            <span class="chip">Best for support & workflow</span>
+          </article>
 
-          <div class="card">
-            <div class="card-title">Full-stack web apps</div>
-            <div class="card-text">
-              Modern apps with dashboards, auth, and clean APIs – designed to feel fast
-              and future-proof.
-            </div>
+          <article class="card">
+            <h3>Web Apps</h3>
             <ul class="card-list">
-              <li>Dashboards & admin panels</li>
-              <li>Landing pages & funnels</li>
-              <li>User accounts & auth</li>
+              <li>Dashboards & admin UI</li>
+              <li>Landing pages & microsites</li>
+              <li>Authentication systems</li>
               <li>REST / JSON APIs</li>
             </ul>
-            <div class="tag-row">
-              <span class="tag">SaaS</span>
-              <span class="tag">Dashboards</span>
-            </div>
-          </div>
+            <span class="chip">Best for SaaS & tools</span>
+          </article>
 
-          <div class="card">
-            <div class="card-title">Project foundations</div>
-            <div class="card-text">
-              If you’re at the idea stage, I help you pick a stack, design structure, and
-              ship a serious first version.
-            </div>
+          <article class="card">
+            <h3>Project Foundations</h3>
             <ul class="card-list">
-              <li>Architecture & tech planning</li>
-              <li>Design system & components</li>
-              <li>Deployment on Vercel</li>
-              <li>Docs & hand-off</li>
+              <li>Technical planning</li>
+              <li>Design system</li>
+              <li>DevOps & deployment</li>
+              <li>Documentation</li>
             </ul>
-            <div class="tag-row">
-              <span class="tag">Strategy</span>
-              <span class="tag">Setup</span>
-            </div>
-          </div>
+            <span class="chip">Best for long-term growth</span>
+          </article>
         </div>
       </section>
 
-      <!-- PROCESS -->
-      <section id="process" class="section">
+      <!-- HOW IT WORKS -->
+      <section class="section" id="process">
         <div class="section-header">
-          <h2 class="section-title">How we work together</h2>
-          <p class="section-subtitle">
-            Simple, clear, and focused on shipping – not endless meetings.
-          </p>
+          <h2>How the process works</h2>
+          <p>No confusion. No chaos. Clear steps from start to finish.</p>
         </div>
 
-        <div class="card-grid">
-          <div class="step card">
+        <div class="timeline">
+          <div class="step">
             <div class="step-number">1</div>
-            <div class="card-title">Project intake</div>
-            <div class="card-text">
-              You fill the form with your goals, features, budget range, and deadline.
-              I review everything and reply with smart questions only if needed.
-            </div>
+            <h3>Smart intake</h3>
+            <p>
+              You fill the ZenoAI project form. I analyze goals, features, and timeline fast.
+            </p>
+
+            <a href="https://zenoai-form.vercel.app/" target="_blank" class="link-inline">
+              Open the form →
+            </a>
           </div>
-          <div class="step card">
+
+          <div class="step">
             <div class="step-number">2</div>
-            <div class="card-title">Plan & estimate</div>
-            <div class="card-text">
-              With help from ZenoAI, I break the work into milestones, estimate time
-              & cost honestly, and share a clear plan.
-            </div>
+            <h3>Plan & scope</h3>
+            <p>
+              I break the idea into milestones, estimate the timeline, and choose the best tech.
+            </p>
           </div>
-          <div class="step card">
+
+          <div class="step">
             <div class="step-number">3</div>
-            <div class="card-title">Build & ship</div>
-            <div class="card-text">
-              I implement, test, and deploy your project on Vercel – with previews,
-              updates, and a final polish pass before launch.
-            </div>
+            <h3>Build & ship</h3>
+            <p>
+              Clean build, automated testing with ZenoAI, deployment on Vercel — delivered fast.
+            </p>
           </div>
         </div>
       </section>
 
       <!-- TECH -->
-      <section id="tech" class="section">
+      <section class="section" id="tech">
         <div class="section-header">
-          <h2 class="section-title">Tech I’m comfortable with</h2>
-          <p class="section-subtitle">
-            Modern, battle-tested tools – combined with AI to move faster without
-            breaking quality.
-          </p>
+          <h2>Tech I work with</h2>
+          <p>Modern stack focused on speed, clarity, and long-term stability.</p>
         </div>
 
-        <div class="tag-row">
-          <span class="tag">React</span>
-          <span class="tag">Next.js</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">Vercel</span>
-          <span class="tag">REST / JSON APIs</span>
-          <span class="tag">OpenAI API</span>
-          <span class="tag">Tailwind-style design systems</span>
+        <div class="pill-grid">
+          <div class="pill-group">
+            <h4>Frontend</h4>
+            <div class="pills">
+              <span class="pill">React</span>
+              <span class="pill">Next.js</span>
+              <span class="pill">Tailwind</span>
+              <span class="pill">Responsive UI</span>
+            </div>
+          </div>
+
+          <div class="pill-group">
+            <h4>Backend</h4>
+            <div class="pills">
+              <span class="pill">Node.js</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">Auth systems</span>
+            </div>
+          </div>
+
+          <div class="pill-group">
+            <h4>AI & Automation</h4>
+            <div class="pills">
+              <span class="pill">OpenAI</span>
+              <span class="pill">ZenoAI Workflows</span>
+              <span class="pill">Webhooks</span>
+              <span class="pill">Auto-testing</span>
+            </div>
+          </div>
+
+          <div class="pill-group">
+            <h4>DevOps</h4>
+            <div class="pills">
+              <span class="pill">Vercel</span>
+              <span class="pill">GitHub</span>
+              <span class="pill">Formspree</span>
+              <span class="pill">CI pipelines</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- ULTRA PROJECT FORM -->
-      <section id="contact" class="section">
+      <!-- PRICING -->
+      <section class="section" id="pricing">
         <div class="section-header">
-          <h2 class="section-title">Start a project with ZenoAI</h2>
-          <p class="section-subtitle">
-            Serious projects only. Share what you want to build and I’ll review it with ZenoAI
-            and reply in under 24 hours.
-          </p>
+          <h2>Pricing</h2>
+          <p>Clear fixed-range pricing for serious projects only.</p>
         </div>
 
-        <form
-          class="project-form"
-          action="https://formspree.io/f/xldabygv"
-          method="POST"
-        >
-          <!-- برای تشخیص منبع -->
-          <input type="hidden" name="source" value="zenoai-website-ultra-form" />
+        <div class="cards-grid three">
+          <article class="card card-soft">
+            <h3>Focused Launch</h3>
+            <p class="price-range">$400 – $800</p>
+            <p class="card-caption">Landing page or mini tool.</p>
+          </article>
 
-          <div class="form-grid">
-            <div class="form-field">
-              <label for="fullName">Full name*</label>
-              <input
-                id="fullName"
-                name="fullName"
-                type="text"
-                required
-                placeholder="Your full name"
-              />
-            </div>
+          <article class="card card-highlight">
+            <div class="badge">Popular</div>
+            <h3>Serious Build</h3>
+            <p class="price-range">$800 – $1,800</p>
+            <p class="card-caption">Dashboards, auth, AI features.</p>
+          </article>
 
-            <div class="form-field">
-              <label for="email">Email*</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                placeholder="you@example.com"
-              />
-            </div>
-
-            <div class="form-field">
-              <label for="projectType">Project type*</label>
-              <select id="projectType" name="projectType" required>
-                <option value="">Choose one…</option>
-                <option>Landing page / website</option>
-                <option>Dashboard / admin panel</option>
-                <option>SaaS app / web app</option>
-                <option>AI chatbot / automation</option>
-                <option>Other (explain below)</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              <label for="budgetRange">Budget range (USD)*</label>
-              <select id="budgetRange" name="budgetRange" required>
-                <option value="">Select a range…</option>
-                <option>Not sure yet</option>
-                <option>$200 – $500</option>
-                <option>$500 – $1,500</option>
-                <option>$1,500 – $3,000</option>
-                <option>$3,000+</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              <label for="timeline">Ideal deadline</label>
-              <input
-                id="timeline"
-                name="timeline"
-                type="text"
-                placeholder="Example: within 2–4 weeks"
-              />
-            </div>
-
-            <div class="form-field">
-              <label for="language">Preferred language</label>
-              <select id="language" name="language">
-                <option>English</option>
-                <option>Persian (Farsi)</option>
-                <option>Both / mixed</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-field">
-            <label for="summary">Project summary*</label>
-            <textarea
-              id="summary"
-              name="summary"
-              rows="3"
-              required
-              placeholder="In 3–6 lines, explain what you want to build, who it’s for, and what problem it solves."
-            ></textarea>
-            <p class="helper">
-              The clearer you are here, the better I can estimate time and cost with ZenoAI.
-            </p>
-          </div>
-
-          <div class="form-grid">
-            <div class="form-field">
-              <label>Features you expect</label>
-              <div class="feature-grid">
-                <label class="check">
-                  <input type="checkbox" name="features" value="auth" />
-                  <span>User accounts / login</span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" name="features" value="payments" />
-                  <span>Payments / subscriptions</span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" name="features" value="dashboard" />
-                  <span>Dashboard / analytics</span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" name="features" value="ai" />
-                  <span>AI / chatbot / automation</span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" name="features" value="other" />
-                  <span>Other / custom</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="form-field">
-              <label for="techPref">Tech or tools (optional)</label>
-              <textarea
-                id="techPref"
-                name="techPreferences"
-                rows="3"
-                placeholder="If you already have preferences like React, Next.js, Node, specific APIs, etc., write them here."
-              ></textarea>
-            </div>
-          </div>
-
-          <div class="form-field">
-            <label for="extraNotes">Anything else I should know?</label>
-            <textarea
-              id="extraNotes"
-              name="extraNotes"
-              rows="3"
-              placeholder="Constraints, existing code, future plans, or anything special about this project."
-            ></textarea>
-          </div>
-
-          <div class="note-row">
-            <span class="badge-note">Serious projects only</span>
-            <p>
-              Please only submit if you’re ready to move forward with a real project and a realistic budget.
-            </p>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-large">
-            Send project to ZenoAI
-          </button>
-        </form>
+          <article class="card card-soft">
+            <h3>Long-term Partner</h3>
+            <p class="price-range">$2,000+</p>
+            <p class="card-caption">Complex multi-module systems.</p>
+          </article>
+        </div>
       </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Ready to build something real? Start with the smart project form.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Smart Form</h3>
+            <p>Best way to get a fast, accurate response.</p>
+            <a
+              href="https://zenoai-form.vercel.app/"
+              class="btn btn-primary"
+              target="_blank"
+            >
+              🚀 Open ZenoAI Form
+            </a>
+          </div>
+
+          <div class="contact-card contact-info">
+            <h3>Direct</h3>
+            <ul>
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:hhrby4272@gmail.com">hhrby4272@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-label">Timezone</span>
+                Asia/Tehran
+              </li>
+              <li>
+                <span class="contact-label">Response</span>
+                Under 24 hours
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <span>© <span id="year"></span> ZenoAI · Built by Hossien Harby & ZenoAI.</span>
-      <span>Based in Asia/Tehran · Working with global clients</span>
+      <div class="footer-left">
+        © <span id="year"></span> ZenoAI — Powered by Hussien Harby & ZenoAI
+      </div>
+
+      <div class="footer-right">
+        <a href="#top">Back to top ↑</a>
+      </div>
     </footer>
+
   </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
-                    </html>
+</html>
