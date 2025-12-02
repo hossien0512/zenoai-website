@@ -298,84 +298,81 @@
       <section class="section" id="contact">
         <div class="section-header">
           <h2>ارتباط و قدم بعدی</h2>
-          <p>
-            بهترین شروع، پر کردن فرم هوشمند ZenoAI در همین صفحه است. بعد از آن می‌توانید
-            مستقیم هم در تماس باشید.
-          </p>
+          <p>بهترین شروع، پر کردن فرم هوشمند ZenoAI است. بعد از آن می‌توانید مستقیم هم در تماس باشید.</p>
         </div>
 
         <div class="contact-grid">
-          <!-- LEFT: Formspree form -->
           <div class="contact-card">
-            <h3>فرم سریع پروژه</h3>
+            <h3>فرم هوشمند پروژه</h3>
             <p>
-              چند خط درباره پروژه‌تان بنویسید تا برنامه، تایم‌لاین و رنج هزینه منطقی برایتان
-              ارسال شود.
+              کمک می‌کند پروژه‌تان را دقیق و حرفه‌ای توضیح دهید تا جواب، زمان‌بندی و رنج
+              هزینه منطقی دریافت کنید.
             </p>
 
+            <!-- فرم متصل به Formspree -->
             <form
-              class="contact-form"
+              action="https://formspree.io/f/mzzngjrq"
               method="POST"
-              action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+              class="contact-form"
             >
-              <!-- Hidden meta -->
-              <input type="hidden" name="source" value="zenoai-landing-fa" />
-              <input type="hidden" name="lang" value="FA" />
+              <input type="hidden" name="_subject" value="پروژه جدید ZenoAI – فرم سایت (FA)" />
 
-              <div class="form-row">
-                <div class="field">
-                  <label for="name-fa">نام</label>
+              <div class="form-row form-row-inline">
+                <div class="form-field">
+                  <label for="name-fa">نام کامل</label>
                   <input id="name-fa" name="name" type="text" required />
                 </div>
-
-                <div class="field">
+                <div class="form-field">
                   <label for="email-fa">ایمیل</label>
                   <input id="email-fa" name="email" type="email" required />
                 </div>
               </div>
 
-              <div class="form-row">
-                <div class="field">
-                  <label for="budget-fa">محدوده بودجه (دلاری)</label>
-                  <input id="budget-fa" name="budget" type="text" />
+              <div class="form-row form-row-inline">
+                <div class="form-field">
+                  <label for="budget-fa">بودجه حدودی (دلار)</label>
+                  <input id="budget-fa" name="budget" type="number" min="0" />
                 </div>
-
-                <div class="field">
-                  <label for="timeline-fa">بازه زمانی مدنظر</label>
-                  <input id="timeline-fa" name="timeline" type="text" />
+                <div class="form-field">
+                  <label for="type-fa">نوع پروژه</label>
+                  <select id="type-fa" name="project_type">
+                    <option value="">انتخاب کنید…</option>
+                    <option value="saas">سرویس SaaS / وب‌اپ</option>
+                    <option value="dashboard">داشبورد / ابزار داخلی</option>
+                    <option value="automation">هوش مصنوعی و اتوماسیون</option>
+                    <option value="landing">لندینگ‌پیج / سایت معرفی</option>
+                    <option value="other">سایر</option>
+                  </select>
                 </div>
               </div>
 
-              <div class="field">
-                <label for="project-fa">توضیح پروژه</label>
-                <textarea
-                  id="project-fa"
-                  name="project"
-                  rows="4"
-                  placeholder="بنویسید چه چیزی می‌خواهید بسازید، چه مشکلی حل شود و نقش ZenoAI چه باشد."
-                  required
-                ></textarea>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="details-fa">توضیحات پروژه</label>
+                  <textarea
+                    id="details-fa"
+                    name="details"
+                    rows="4"
+                    placeholder="خیلی کوتاه توضیح بده ZenoAI دقیقاً چه چیزی برات بسازد…"
+                    required
+                  ></textarea>
+                </div>
               </div>
 
               <button type="submit" class="btn btn-primary btn-full">
-                ارسال جزئیات پروژه
+                🚀 ارسال برای ZenoAI
               </button>
 
-              <p class="form-hint">
-                اگر به جزئیات بیشتری نیاز دارید، می‌توانید از
-                <a
-                  href="https://zenoai-form.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <p class="form-footnote">
+                یا می‌توانید از
+                <a href="https://zenoai-form.vercel.app/" target="_blank" rel="noopener noreferrer">
                   فرم کامل ZenoAI
                 </a>
-                هم استفاده کنید.
+                برای پروژه‌های بزرگ و چندمرحله‌ای استفاده کنید.
               </p>
             </form>
           </div>
 
-          <!-- RIGHT: Direct contact -->
           <div class="contact-card contact-info">
             <h3>ارتباط مستقیم</h3>
             <ul>
@@ -389,7 +386,7 @@
               </li>
               <li>
                 <span class="contact-label">زمان پاسخ</span>
-                حداکثر ۲۴ ساعت برای پروژه‌های جدی و توضیح‌داده‌شده.
+                حداکثر ۲۴ ساعت برای پروژه‌های جدی و توضیح داده شده.
               </li>
             </ul>
           </div>
@@ -413,4 +410,4 @@
     document.getElementById('year-fa').textContent = new Date().getFullYear();
   </script>
 </body>
-                                                     </html>
+</html>
