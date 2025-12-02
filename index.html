@@ -298,80 +298,81 @@
       <section class="section" id="contact">
         <div class="section-header">
           <h2>Contact & next steps</h2>
-          <p>Best way to start is the smart project form below. Direct contact is available too.</p>
+          <p>Best way to start is the smart project form. Direct contact is available too.</p>
         </div>
 
         <div class="contact-grid">
-          <!-- LEFT: Formspree form inside card -->
           <div class="contact-card">
-            <h3>Quick project form</h3>
+            <h3>Smart project form</h3>
             <p>
-              Tell me about your project. This form sends directly to my inbox so I can reply
-              with a realistic plan, timeline, and budget range.
+              Clean way to describe your project so I can respond with a realistic plan, timeline,
+              and budget range.
             </p>
 
+            <!-- Embedded Formspree form -->
             <form
-              class="contact-form"
+              action="https://formspree.io/f/mzzngjrq"
               method="POST"
-              action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+              class="contact-form"
             >
-              <!-- Hidden meta -->
-              <input type="hidden" name="source" value="zenoai-landing-en" />
-              <input type="hidden" name="lang" value="EN" />
+              <input type="hidden" name="_subject" value="New ZenoAI project – Website form (EN)" />
 
-              <div class="form-row">
-                <div class="field">
-                  <label for="name">Name</label>
-                  <input id="name" name="name" type="text" required />
+              <div class="form-row form-row-inline">
+                <div class="form-field">
+                  <label for="name-en">Full name</label>
+                  <input id="name-en" name="name" type="text" required />
                 </div>
+                <div class="form-field">
+                  <label for="email-en">Email</label>
+                  <input id="email-en" name="email" type="email" required />
+                </div>
+              </div>
 
-                <div class="field">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" required />
+              <div class="form-row form-row-inline">
+                <div class="form-field">
+                  <label for="budget-en">Approx. budget (USD)</label>
+                  <input id="budget-en" name="budget" type="number" min="0" />
+                </div>
+                <div class="form-field">
+                  <label for="type-en">Project type</label>
+                  <select id="type-en" name="project_type">
+                    <option value="">Select…</option>
+                    <option value="saas">SaaS / Web app</option>
+                    <option value="dashboard">Dashboard / internal tool</option>
+                    <option value="automation">AI & automation</option>
+                    <option value="landing">Landing page / marketing site</option>
+                    <option value="other">Other</option>
+                  </select>
                 </div>
               </div>
 
               <div class="form-row">
-                <div class="field">
-                  <label for="budget">Estimated budget (USD)</label>
-                  <input id="budget" name="budget" type="text" />
+                <div class="form-field">
+                  <label for="details-en">Project details</label>
+                  <textarea
+                    id="details-en"
+                    name="details"
+                    rows="4"
+                    placeholder="Short description of what you want ZenoAI to build…"
+                    required
+                  ></textarea>
                 </div>
-
-                <div class="field">
-                  <label for="timeline">Ideal timeline</label>
-                  <input id="timeline" name="timeline" type="text" />
-                </div>
-              </div>
-
-              <div class="field">
-                <label for="project">What do you want to build?</label>
-                <textarea
-                  id="project"
-                  name="project"
-                  rows="4"
-                  placeholder="Tell me about your app, automations, current problems, and what ZenoAI should help us do."
-                  required
-                ></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary btn-full">
-                Send project details
+                🚀 Send to ZenoAI
               </button>
 
-              <p class="form-hint">
-                Prefer the long version? You can also use the full
-                <a
-                  href="https://zenoai-form.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <p class="form-footnote">
+                Or use the full
+                <a href="https://zenoai-form.vercel.app/" target="_blank" rel="noopener noreferrer">
                   ZenoAI project form
-                </a>.
+                </a>
+                for detailed, multi-step projects.
               </p>
             </form>
           </div>
 
-          <!-- RIGHT: Direct contact -->
           <div class="contact-card contact-info">
             <h3>Direct contact</h3>
             <ul>
@@ -409,4 +410,4 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
-            </html>
+</html>
