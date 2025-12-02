@@ -298,26 +298,84 @@
       <section class="section" id="contact">
         <div class="section-header">
           <h2>ارتباط و قدم بعدی</h2>
-          <p>بهترین شروع، پر کردن فرم هوشمند ZenoAI است. بعد از آن می‌توانید مستقیم هم در تماس باشید.</p>
+          <p>
+            بهترین شروع، پر کردن فرم هوشمند ZenoAI در همین صفحه است. بعد از آن می‌توانید
+            مستقیم هم در تماس باشید.
+          </p>
         </div>
 
         <div class="contact-grid">
+          <!-- LEFT: Formspree form -->
           <div class="contact-card">
-            <h3>فرم هوشمند پروژه</h3>
+            <h3>فرم سریع پروژه</h3>
             <p>
-              کمک می‌کند پروژه‌تان را دقیق و حرفه‌ای توضیح دهید تا جواب، زمان‌بندی و رنج
-              هزینه منطقی دریافت کنید.
+              چند خط درباره پروژه‌تان بنویسید تا برنامه، تایم‌لاین و رنج هزینه منطقی برایتان
+              ارسال شود.
             </p>
-            <a
-              href="https://zenoai-form.vercel.app/"
-              class="btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
+
+            <form
+              class="contact-form"
+              method="POST"
+              action="https://formspree.io/f/YOUR_FORMSPREE_ID"
             >
-              🚀 باز کردن فرم ZenoAI
-            </a>
+              <!-- Hidden meta -->
+              <input type="hidden" name="source" value="zenoai-landing-fa" />
+              <input type="hidden" name="lang" value="FA" />
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="name-fa">نام</label>
+                  <input id="name-fa" name="name" type="text" required />
+                </div>
+
+                <div class="field">
+                  <label for="email-fa">ایمیل</label>
+                  <input id="email-fa" name="email" type="email" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="budget-fa">محدوده بودجه (دلاری)</label>
+                  <input id="budget-fa" name="budget" type="text" />
+                </div>
+
+                <div class="field">
+                  <label for="timeline-fa">بازه زمانی مدنظر</label>
+                  <input id="timeline-fa" name="timeline" type="text" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="project-fa">توضیح پروژه</label>
+                <textarea
+                  id="project-fa"
+                  name="project"
+                  rows="4"
+                  placeholder="بنویسید چه چیزی می‌خواهید بسازید، چه مشکلی حل شود و نقش ZenoAI چه باشد."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                ارسال جزئیات پروژه
+              </button>
+
+              <p class="form-hint">
+                اگر به جزئیات بیشتری نیاز دارید، می‌توانید از
+                <a
+                  href="https://zenoai-form.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  فرم کامل ZenoAI
+                </a>
+                هم استفاده کنید.
+              </p>
+            </form>
           </div>
 
+          <!-- RIGHT: Direct contact -->
           <div class="contact-card contact-info">
             <h3>ارتباط مستقیم</h3>
             <ul>
@@ -331,7 +389,7 @@
               </li>
               <li>
                 <span class="contact-label">زمان پاسخ</span>
-                حداکثر ۲۴ ساعت برای پروژه‌های جدی و توضیح داده شده.
+                حداکثر ۲۴ ساعت برای پروژه‌های جدی و توضیح‌داده‌شده.
               </li>
             </ul>
           </div>
@@ -355,4 +413,4 @@
     document.getElementById('year-fa').textContent = new Date().getFullYear();
   </script>
 </body>
-</html>
+                                                     </html>
